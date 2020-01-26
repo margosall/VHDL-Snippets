@@ -1,0 +1,10 @@
+v 4
+file . "register.vhd" "c7cf7be7a0774708bd0c9229a4e208fbf8ac7b24" "20200126184614.785":
+  entity byte_register at 1( 0) + 0 on 15;
+  architecture behavioral of byte_register at 13( 269) + 0 on 16;
+file . "register_testbench.vhd" "94a4869e9f0538e4c54fe47170c9b76a610c1410" "20200126184614.784":
+  entity register_testbench at 1( 0) + 0 on 13;
+  architecture behavior of register_testbench at 7( 99) + 0 on 14;
+file . "clock.vhd" "5eed80d8ffbd59dc7762c66d0d62ca5d4b94ae23" "20200126184614.783":
+  entity clock at 1( 0) + 0 on 11;
+  architecture behavior of clock at 7( 108) + 0 on 12;
