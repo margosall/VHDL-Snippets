@@ -42,7 +42,7 @@ end rom;
 
 architecture Behavioral of rom is
     type  ROMtype  is array(size-1 downto 0) of std_logic_vector(7 downto 0);
-    signal memory_arr :  ROMtype  :=  (X"6C",X"6C",X"65",X"48");
+    constant memory_arr :  ROMtype  :=  (X"6C",X"6C",X"65",X"48");
     signal addr_int : std_logic_vector(size/2-1 downto 0) := (others => '0');
 begin
     PROCESS(clk)
