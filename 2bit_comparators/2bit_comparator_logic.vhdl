@@ -28,8 +28,8 @@ architecture behavioral of comparator_logic is
     equal <= not(
         not(not(b(1)) and not(b(0)) and not(a(1)) and not(a(0))) and
         not(not(b(1)) and     b(0)  and not(a(1)) and     a(0))  and
-        not(    b(1) and      b(0)  and     a(1)  and     a(0))  and
-        not(    b(1) and not(b(0))  and     a(1)  and not(a(0)))
+        not(    b(1)  and     b(0)  and     a(1)  and     a(0))  and
+        not(    b(1)  and not(b(0)) and     a(1)  and not(a(0)))
     );
     -- greater <= gi;
     -- lesser <= li;
