@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity nbit_adder is
-    generic (size : integer:=4);
+    generic (size : integer := 4);
     port(
       a, b : in std_logic_vector(size-1 downto 0);
       ci: in std_logic;
@@ -12,7 +12,6 @@ entity nbit_adder is
 end nbit_adder;
 
 architecture structure of nbit_adder is
-    -- signal c0,c1,c2,c3,c4,c5,c6 : std_logic;
     signal c : std_logic_vector(size-1 downto 0);
     component full_adder is
     port(
