@@ -47,7 +47,7 @@ architecture structure of multiplier is
             with b(I) select  a_int(I) <= 
                 a when '1', 
                 (others => '0') when others;
-            carry_sum_int(I+1) <= carry_int(I) & r(I)(3 downto 1);
+            carry_sum_int(I+1) <= carry_int(I) & r(I)(size-1 downto 1);
 
             result_int(I) <= r(I)(0);
         end generate MULTI_X;
