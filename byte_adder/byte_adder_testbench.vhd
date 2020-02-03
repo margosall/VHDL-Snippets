@@ -29,6 +29,11 @@ begin
     begin
         input <= "0" & X"0000"; wait for 1 ns; assert output = "0" & X"00" report "0+0+0 failed";
         input <= "0" & X"0302"; wait for 1 ns; assert output = "0" & X"05" report "2+3+0 failed";
+
+        input <= "0" & X"0303"; wait for 1 ns; assert output = "0" & X"06" report "2+3+0 failed";
+        input <= "0" & X"0304"; wait for 1 ns; assert output = "0" & X"07" report "2+4+0 failed";
+        input <= "0" & X"0305"; wait for 1 ns; assert output = "0" & X"08" report "2+5+0 failed";
+
         input <= "1" & X"0302"; wait for 1 ns; assert output = "0" & X"06" report "2+3+1 failed";
         input <= "0" & X"0A0A"; wait for 1 ns; assert output = "0" & X"14" report "10+10+0 failed";
         input <= "1" & X"FFFF"; wait for 1 ns; assert output = "1" & X"FF" report "0xFF+0xFF+1 failed";
