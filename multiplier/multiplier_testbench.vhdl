@@ -1,21 +1,20 @@
 library ieee;
 use ieee.std_logic_1164.all;
+use work.constants.all;
 
 entity multiplier_testbench is
-    generic (size : integer := 4);
 end multiplier_testbench;
 
 architecture behavioral of multiplier_testbench is
     component multiplier is
-        generic (size : integer := 4);
         port(
-          a, b : in std_logic_vector(size-1 downto 0);
-          output : out std_logic_vector(size*2-1 downto 0)
+          a, b : in std_logic_vector(SIZE-1 downto 0);
+          output : out std_logic_vector(SIZE*2-1 downto 0)
         ); 
     end component;
 
-    signal ai,bi : std_logic_vector(size-1 downto 0);
-    signal oi : std_logic_vector(size*2-1 downto 0);
+    signal ai,bi : std_logic_vector(SIZE-1 downto 0);
+    signal oi : std_logic_vector(SIZE*2-1 downto 0);
 
 begin
     multi: multiplier port map(ai,bi,oi);
