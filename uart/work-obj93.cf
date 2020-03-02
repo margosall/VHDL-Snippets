@@ -1,0 +1,10 @@
+v 4
+file . "uart.vhd" "c35d3febf1baae49a3242219a7856b89222d8192" "20200226232920.211":
+  entity uart at 23( 1083) + 0 on 15;
+  architecture logic of uart at 47( 2249) + 0 on 16;
+file . "uart_tb.vhd" "6e227653d833afde40eb65ee1ea036d2534a65c0" "20200226232920.208":
+  entity uart_tb at 1( 0) + 0 on 13;
+  architecture behavioral of uart_tb at 9( 135) + 0 on 14;
+file . "clock.vhd" "6d16ab94eb22742273d08fb32340fb28cdd10482" "20200226232920.201":
+  entity clock at 1( 0) + 0 on 11;
+  architecture behavior of clock at 7( 105) + 0 on 12;
